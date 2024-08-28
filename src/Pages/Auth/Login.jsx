@@ -9,6 +9,7 @@ const Login = () => {
     const [error, setError] = useState(null);
     const handleLogin = async (e) => {
         e.preventDefault();
+        localStorage.removeItem("authToken");
         try {
             const response = await axios.post('http://127.0.0.1:3000/api/v1/auth/login', {
                 email,
