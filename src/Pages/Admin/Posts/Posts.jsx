@@ -16,6 +16,7 @@ function Index() {
     axios
       .get("http://127.0.0.1:3000/api/v1/posts")
       .then((response) => {
+        console.log(response.data)
         setPosts(response.data.data.posts);
       })
       .catch((error) => {
@@ -23,7 +24,7 @@ function Index() {
       });
   }
 
-  function setID(id, content, title, email, password, age) {
+  function setID(id, title, content) {
     localStorage.setItem("id", id);
     localStorage.setItem("content", content);
     localStorage.setItem("title", title);
@@ -53,6 +54,8 @@ function Index() {
           <tr>
             <th>Title</th>
             <th>Content</th>
+            <th>Images</th>
+            <th>Author</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -62,6 +65,8 @@ function Index() {
               <tr key={index}>
                 <td>{post.title}</td>
                 <td>{post.content}</td>
+                <td>{post.images}</td>
+                <td>{post.user.user?post.user.user.first_name+' '+post.user.user.last_name:''}</td>
                 <td>
                   <Link to={`/admin/posts/edit`}>
                     <button
