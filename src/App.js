@@ -43,13 +43,16 @@ function App() {
             <Route path="users/edit" element={<ManageUsers />} />
 
             <Route path="posts" element={<Posts />} />
-            <Route path="manage-posts" element={<ManagePosts />} />
+            <Route path="posts/create" element={<ManagePosts />} />
+            <Route path="posts/edit" element={<ManagePosts />} />
 
             <Route path="roles" element={<Roles />} />
-            <Route path="manage-roles" element={<ManageRoles />} />
+            <Route path="roles/create" element={<ManageRoles />} />
+            <Route path="roles/edit" element={<ManageRoles />} />
 
             <Route path="comments" element={<Comments />} />
-            <Route path="manage-comments" element={<ManageComments />} />
+            <Route path="comments/create" element={<ManageComments />} />
+            <Route path="comments/edit" element={<ManageComments />} />
 
             <Route path="likes" element={<Likes />} />
             <Route path="manage-likes" element={<ManageLikes />} />

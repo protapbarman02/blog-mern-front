@@ -48,7 +48,7 @@ function Index() {
 
   return (
     <div style={{ margin: "2rem" }}>
-      <h1 className="text-center mb-4">User Management</h1>
+      <h1 className="text-center mb-4 fs-3">User Management</h1>
       <table className="table table-striped table-bordered table-hover table-responsive shadow-sm">
         <thead>
           <tr>

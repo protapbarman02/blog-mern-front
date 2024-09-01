@@ -92,7 +92,7 @@ export default function Header() {
                             <span className="sr-only">Open user menu</span>
                             <div
                                 className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"
-                                style={{ backgroundImage: 'url("../../lib/images/AVTAR.jpg")' }}
+                                style={{ backgroundImage: 'url("../public/assets/images/AVTAR.jpg")' }}
                             >
                                 <span className="sr-only">Subhasis</span>
                             </div>
