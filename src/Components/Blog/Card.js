@@ -1,9 +1,19 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Card() {
+const Card = ({
+  text
+}) => {
   return (
-    <div>
-      Card
-    </div>
-  )
-}
+    <Card>
+      {text}
+    </Card>
+  );
+};
+
+Card.propTypes = {
+  text: PropTypes.string.isRequired,
+
+};
+
+export default Card;

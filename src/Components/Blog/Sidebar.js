@@ -7,24 +7,24 @@ export default function Sidebar() {
             <div class=" ms-6 h-1/3">
                 <ul>
                     <li>
-                        <Link to="/profile" className=" hover:no-underline" >
+                        <Link to="/profile" className=" hover:no-underline font-bold" >
                             Profile
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" className=" hover:no-underline">
+                        <Link to="/" className=" hover:no-underline font-bold">
                             Home
                         </Link></li>
                     <li>
-                        <Link to="/login" className=" hover:no-underline">
+                        <Link to="/login" className=" hover:no-underline font-bold">
                             Login
                         </Link></li>
                     <li>
-                        <Link to="/signup" className=" hover:no-underline">
+                        <Link to="/signup" className=" hover:no-underline font-bold">
                             Signup
                         </Link></li>
                     <li>
-                        <Link to="/logout" className=" hover:no-underline">
+                        <Link to="/logout" className=" hover:no-underline font-bold">
                             Logout
                         </Link></li>
 
