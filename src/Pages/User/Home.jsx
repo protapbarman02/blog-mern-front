@@ -1,10 +1,10 @@
 import React from 'react'
- import DynamicButton from "../../Components/Blog/Button";
-// import Pragrap from "../../Components/Blog/Pragrap";
-// import Heading from "../../Components/Blog/Heading";
-// import CardBody from "../../Components/Blog/CardBody";
- import Images from "../../Components/Blog/Images";
-// import Card from "../../Components/Blog/Card";
+import DynamicButton from "../../Components/Blog/Button";
+import Paragraph from '../../Components/Blog/Paragraph';
+import Heading from "../../Components/Blog/Heading";
+import CardBody from "../../Components/Blog/CardBody";
+import Image from "../../Components/Blog/Image";
+import Card from "../../Components/Blog/Card";
 
 export default function Home() {
     function handleClick(){
@@ -27,13 +27,11 @@ export default function Home() {
                     style={{ backgroundColor: 'gray' }}
                 />
                 
-                {/* <Pragrap text=".."/> */}
-                {/* <Heading text=".."/> */}
-                {/* <CardBody text=".."/> */}
-                <Images text=".." />
-                {/* <Card text=".." /> */}
-
-                
+                <Paragraph className='text-sm' text="this is a text"/>
+                <Heading text=".."/>
+                <CardBody text=".."/>
+                <Image alt="abcd" src="" />
+                <Card text=".." />
             </div>
         </div>
         

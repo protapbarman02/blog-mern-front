@@ -5,9 +5,9 @@ const CardBody = ({
     text
 }) => {
     return (
-        <CardBody>
+        <cardBody>
             {text}
-        </CardBody>
+        </cardBody>
     );
 };
 

@@ -5,9 +5,9 @@ const Card = ({
   text
 }) => {
   return (
-    <Card>
-      {text}
-    </Card>
+    <card>
+      text = {text}
+    </card>
   );
 };
 

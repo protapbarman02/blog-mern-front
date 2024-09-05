@@ -5,9 +5,9 @@ const Heading = ({
     text
 }) => {
     return (
-        <Heading>
+        <h1>
             {text}
-        </Heading>
+        </h1>
     );
 };
 
