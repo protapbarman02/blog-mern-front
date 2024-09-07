@@ -29,3 +29,7 @@
     @apply text-sky-500 hover:underline;
   }
 }
+
+textarea:focus, input:focus{
+  outline: none;
+}

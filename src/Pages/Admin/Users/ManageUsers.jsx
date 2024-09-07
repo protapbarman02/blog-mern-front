@@ -24,9 +24,6 @@ function ManageUser() {
         setPassword(localStorage.getItem("password"));
         setAge(localStorage.getItem("age"));
     }
-    else{
-        console.log("hi")
-    }
   }, []);
 
   const handleSubmit = (e) => {
