@@ -1,20 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Image = ({
- alt, src
-}) => {
-    return (
-        <img 
-        alt={alt}
-        src={src}
-        />
-    );
+const Image = ({ src, alt }) => {
+  return (
+    <img src={src} alt={alt} className="card-image" />
+  );
 };
 
 Image.propTypes = {
-    alt: PropTypes.string.isRequired,
-    src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired
 };
 
 export default Image;
