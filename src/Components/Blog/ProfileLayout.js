@@ -4,7 +4,7 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 
 
-export default function Layout() {
+export default function ProfileLayout() {
     return (
         <div>
         <div  > <Header /></div>
@@ -13,10 +13,7 @@ export default function Layout() {
                 <div className="flex flex-col col-md-10">
 
                     <div className="flex-1 flex p-6 min-h-0 overflow-auto  col-span-12 text-justify bg-rose-200">
-                        <div className="flex-1  col-md-3"></div>
-                        <div className="flex-2 col-md-6 bg-lime-400 ">
-                            <Outlet />
-                        </div>
+                        <Outlet />
                         <div className="flex-1 col-md-3 "></div>
 
                     </div>
