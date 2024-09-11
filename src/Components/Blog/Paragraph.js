@@ -1,19 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Paragraph = ({
-    text, className
-}) => {
-    return (
-        <p className={className}>
-            {text}
-        </p>
-    );
+const Paragraph = ({ text }) => {
+  return (
+    <p className="card-paragraph">{text}</p>
+  );
 };
 
 Paragraph.propTypes = {
-    text: PropTypes.string.isRequired,
-    className: PropTypes.string
+  text: PropTypes.string.isRequired
 };
 
 export default Paragraph;
