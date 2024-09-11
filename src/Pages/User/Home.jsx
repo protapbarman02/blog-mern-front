@@ -31,7 +31,7 @@ export default function Home() {
                 <Heading text=".."/>
                 <CardBody text=".."/>
                 <Image alt="abcd" src="" />
-                <Card text=".." />
+                <Card text=".."/>
             </div>
         </div>
         

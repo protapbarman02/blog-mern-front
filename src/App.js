@@ -1,6 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./Components/Shared/Layout";
 import UserLayout from "./Components/Blog/UserLayout";
+import ProfileLayout from "./Components/Blog/ProfileLayout";
+
 
 import Dashboard from "./Pages/Admin/Dashboard";
 
@@ -27,6 +29,7 @@ import ChangePassword from "./Pages/Auth/ChangePassword";
 import RecoverPassword from "./Pages/Auth/RecoverPassword";
 
 import Home from "./Pages/User/Home";
+
 import Profile from "./Pages/User/Profile";
 
 function App() {
@@ -60,12 +63,18 @@ function App() {
 
           <Route path="/" element={<UserLayout />}>
             <Route index element={<Home />} />
-            <Route path="profile" element={<Profile />} />
             <Route path="signup" element={<Signup />} />
             <Route path="change-password" element={<ChangePassword />} />
             <Route path="recover-password" element={<RecoverPassword />} />
             <Route path="login" element={<Login />} />
           </Route>
+
+          {/* Separate route for Profile with ProfileLayout */}
+          <Route path="profile" element={<ProfileLayout />}>
+            <Route index element={<Profile />} />
+          </Route>
+
+
 
         </Routes>
       </Router>

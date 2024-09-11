@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 export default function Sidebar() {
     return (
         <div className=" h-screen flex-1 bg-sky-800 flex flex-col">
