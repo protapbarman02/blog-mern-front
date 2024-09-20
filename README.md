@@ -2,22 +2,17 @@
 
 ## install react/packages
 
-  - run this command in terminal 
-  ``` 
-    npm i
-  ```
+- run this command in terminal
+
+> npm i
 
 ## run app
 
 ### backend
 
- - make sure to run backend first, then run this command in terminal
- ```
-  npm start
- ```
+- make sure to run backend first, then run this command in terminal
 
-
-
+> npm start
 
 ## no need to follow this while running
 
