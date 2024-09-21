@@ -64,11 +64,18 @@ import { AiOutlineLogin } from "react-icons/ai";
 import { BiLogOutCircle } from "react-icons/bi";
 import { MdAssignmentInd } from "react-icons/md";
 import { SiBloglovin } from "react-icons/si";
+import { AppContext } from '../../App';
 
 
 export default function Sidebar() {
+    let appContext = React.useContext(AppContext);
+    React.useEffect(()=>{
+        console.log(appContext.data);
+    });
+
     return (
         <div className=" h-screen flex-1 bg-sky-800 flex flex-col">
+            {appContext.data.isLogin && <h1 className='alert alert-success'>Logged in</h1>}
             <div class=" h-1/3">1
                 <div class=" text-center font-bold text-yellow-200">
                     <h1 class="flex gap-2 text-center "><SiBloglovin />Blog-Mern</h1></div>
