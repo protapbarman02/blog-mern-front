@@ -1,0 +1,637 @@
+/* Section Gaps css
+============================================================================================ */
+
+.section_gap {
+  padding: 100px 0;
+}
+@media (max-width: 991px) {
+  .section_gap {
+    padding: 80px 0;
+  }
+}
+
+/* Section title css
+============================================================================================ */
+
+/* Start Gradient Area css
+============================================================================================ */
+
+.pagination a.active,
+.pagination a:hover,
+.blog-pagination .page-item.active .page-link {
+  background: -webkit-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  background: -moz-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  background: -o-linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+  background: linear-gradient(90deg, #ffba00 0%, #ff6c00 100%);
+}
+
+/* Start primary btn css
+============================================================================================ */
+
+body {
+  line-height: 24px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #777777;
+  background: #fff;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  font-weight: 500;
+  line-height: 1.2 !important;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.5em;
+}
+
+/* banner area css
+============================================================================================ */
+
+/* start features area css
+============================================================================================ */
+
+/* start features area css
+============================================================================================ */
+/* start category area css
+============================================================================================ */
+
+/* end category area css
+============================================================================================ */
+/* start product area css
+============================================================================================ */
+
+/* end product area css
+============================================================================================ */
+
+.pagination {
+  margin-top: 10px;
+  border-left: 1px solid #eee;
+  border-radius: 0px;
+}
+.pagination a {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  background: #fff;
+}
+.pagination a.active {
+  color: #fff;
+}
+.pagination a:hover {
+  color: #fff;
+}
+
+@-webkit-keyframes click-wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.35;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+}
+@-moz-keyframes click-wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.35;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+}
+@keyframes click-wave {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.35;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+  }
+}
+
+/* Feature Product Area css
+============================================================================================ */
+
+/* End Feature Product Area css
+============================================================================================ */
+/* End Feature Product Area css
+============================================================================================ */
+
+/* End Feature Product Area css
+============================================================================================ */
+/* Product Sidebar Area css
+============================================================================================ */
+
+/* End Product Sidebar Area css
+============================================================================================ */
+/* Single Product Area css
+============================================================================================ */
+
+/* End Single Product Area css
+============================================================================================ */
+/* Cart Area css
+============================================================================================ */
+
+/* End Cart Area css
+============================================================================================ */
+/* End Cart Area css
+============================================================================================ */
+/* nnnn */
+
+/* End Cart Area css
+============================================================================================ */
+/* Login form Area css
+============================================================================================ */
+
+/* End Login form Area css
+============================================================================================ */
+/* Tracking Form Area css
+============================================================================================ */
+
+/* End Tracking Form Area css
+============================================================================================ */
+
+/* Latest Blog Area css
+============================================================================================ */
+
+/* End Latest Blog Area css
+============================================================================================ */
+/* Causes Area css
+============================================================================================ */
+
+/* End Causes Area css
+============================================================================================ */
+/*================= latest_blog_area css =============*/
+
+/*========= blog_categorie_area css ===========*/
+
+/*============ blog_left_sidebar css ==============*/
+.blog_item {
+  margin-bottom: 40px;
+}
+
+.blog_info {
+  padding-top: 30px;
+}
+.blog_info .post_tag {
+  padding-bottom: 20px;
+}
+.blog_info .post_tag a {
+  font: 300 14px/21px "Roboto", sans-serif;
+  color: #222222;
+}
+.blog_info .post_tag a:hover {
+  color: #777777;
+}
+.blog_info .post_tag a.active {
+  color: #ffba00;
+}
+.blog_info .blog_meta li a {
+  font: 300 14px/20px "Roboto", sans-serif;
+  color: #777777;
+  vertical-align: middle;
+  padding-bottom: 12px;
+  display: inline-block;
+}
+.blog_info .blog_meta li a i {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 15px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.blog_info .blog_meta li a:hover {
+  color: #ffba00;
+}
+
+.blog_post img {
+  max-width: 100%;
+}
+.blog_post .white_bg_btn {
+  border: 1px solid #eeeeee;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 30px;
+  line-height: 34px;
+  display: inline-block;
+  color: #222222;
+}
+
+.blog_details {
+  padding-top: 20px;
+}
+.blog_details h2 {
+  font-size: 24px;
+  line-height: 36px;
+  color: #222222;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+.blog_details h2:hover {
+  color: #c5322d;
+}
+.blog_details p {
+  margin-bottom: 26px;
+}
+
+.blog_right_sidebar {
+  border: 1px solid #eeeeee;
+  background: #fafaff;
+  padding: 30px;
+}
+.blog_right_sidebar .widget_title {
+  font-size: 18px;
+  line-height: 25px;
+  background: #ffba00;
+  text-align: center;
+  color: #fff;
+  padding: 8px 0px;
+  margin-bottom: 30px;
+}
+.blog_right_sidebar .search_widget .input-group .form-control {
+  font-size: 14px;
+  line-height: 29px;
+  border: 0px;
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 20px;
+  border-radius: 0;
+  z-index: 0;
+  background: #ffba00;
+}
+.blog_right_sidebar .search_widget .input-group .form-control.placeholder {
+  color: #fff;
+}
+.blog_right_sidebar .search_widget .input-group .form-control:-moz-placeholder {
+  color: #fff;
+}
+.blog_right_sidebar
+  .search_widget
+  .input-group
+  .form-control::-moz-placeholder {
+  color: #fff;
+}
+.blog_right_sidebar
+  .search_widget
+  .input-group
+  .form-control::-webkit-input-placeholder {
+  color: #fff;
+}
+.blog_right_sidebar .search_widget .input-group .form-control:focus {
+  box-shadow: none;
+}
+.blog_right_sidebar .search_widget .input-group .btn-default {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  border: 0px;
+  box-shadow: none;
+  font-size: 14px;
+  color: #fff;
+  padding: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+  margin-top: 20px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li {
+  border-bottom: 2px dotted #eee;
+  transition: all 0.3s ease 0s;
+  padding-bottom: 12px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #777;
+}
+.blog_right_sidebar .post_category_widget .cat-list li a p {
+  margin-bottom: 0px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li + li {
+  padding-top: 15px;
+}
+.blog_right_sidebar .post_category_widget .cat-list li:hover {
+  border-color: #ffba00;
+}
+.blog_right_sidebar .post_category_widget .cat-list li:hover a {
+  color: #ffba00;
+}
+.blog_right_sidebar .br {
+  width: 100%;
+  height: 1px;
+  background: #eeeeee;
+  margin: 30px 0px;
+}
+
+.blog-pagination {
+  padding-top: 25px;
+  padding-bottom: 95px;
+}
+.blog-pagination .page-link {
+  border-radius: 0;
+}
+.blog-pagination .page-item {
+  border: none;
+}
+
+.page-link {
+  background: transparent;
+  font-weight: 400;
+}
+
+.blog-pagination .page-item.active .page-link {
+  color: #fff;
+}
+
+.blog-pagination .page-link {
+  position: relative;
+  display: block;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #8a8a8a;
+  border: none;
+}
+
+.blog-pagination .page-link .lnr {
+  font-weight: 600;
+}
+
+.blog-pagination .page-item:last-child .page-link,
+.blog-pagination .page-item:first-child .page-link {
+  border-radius: 0;
+}
+
+.blog-pagination .page-link:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #c5322d;
+  border-color: #eee;
+}
+
+/*============ Start Blog Single Styles  =============*/
+.single-post-area .blog_details {
+  padding-top: 26px;
+}
+.single-post-area .blog_details p {
+  margin-bottom: 10px;
+}
+.single-post-area .quotes {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 24px 35px 24px 30px;
+  background-color: white;
+  box-shadow: -20.84px 21.58px 30px 0px rgba(176, 176, 176, 0.1);
+  font-size: 14px;
+  line-height: 24px;
+  color: #777;
+  font-style: italic;
+}
+.single-post-area .arrow {
+  position: absolute;
+}
+.single-post-area .arrow .lnr {
+  font-size: 20px;
+  font-weight: 600;
+}
+.single-post-area .navigation-area {
+  border-top: 1px solid #eee;
+  padding-top: 30px;
+  margin-top: 60px;
+}
+.single-post-area .navigation-area p {
+  margin-bottom: 0px;
+}
+.single-post-area .navigation-area h4 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+}
+.single-post-area .navigation-area .nav-left {
+  text-align: left;
+}
+.single-post-area .navigation-area .nav-left .thumb {
+  margin-right: 20px;
+  background: #000;
+}
+.single-post-area .navigation-area .nav-left .thumb img {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-post-area .navigation-area .nav-left .lnr {
+  margin-left: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-post-area .navigation-area .nav-left:hover .lnr {
+  opacity: 1;
+}
+.single-post-area .navigation-area .nav-left:hover .thumb img {
+  opacity: 0.5;
+}
+@media (max-width: 767px) {
+  .single-post-area .navigation-area .nav-left {
+    margin-bottom: 30px;
+  }
+}
+.single-post-area .navigation-area .nav-right {
+  text-align: right;
+}
+.single-post-area .navigation-area .nav-right .thumb {
+  margin-left: 20px;
+  background: #000;
+}
+.single-post-area .navigation-area .nav-right .thumb img {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-post-area .navigation-area .nav-right .lnr {
+  margin-right: 20px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.single-post-area .navigation-area .nav-right:hover .lnr {
+  opacity: 1;
+}
+.single-post-area .navigation-area .nav-right:hover .thumb img {
+  opacity: 0.5;
+}
+
+.comments-area {
+  background: #fafaff;
+  border: 1px solid #eee;
+  padding: 50px 30px;
+  margin-top: 50px;
+}
+@media (max-width: 414px) {
+  .comments-area {
+    padding: 50px 8px;
+  }
+}
+.comments-area h4 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #222222;
+  font-size: 18px;
+}
+.comments-area h5 {
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+.comments-area a {
+  color: #222222;
+}
+.comments-area .comment-list {
+  padding-bottom: 48px;
+}
+.comments-area .comment-list:last-child {
+  padding-bottom: 0px;
+}
+.comments-area .comment-list.left-padding {
+  padding-left: 25px;
+}
+@media (max-width: 413px) {
+  .comments-area .comment-list .single-comment h5 {
+    font-size: 12px;
+  }
+  .comments-area .comment-list .single-comment .date {
+    font-size: 11px;
+  }
+  .comments-area .comment-list .single-comment .comment {
+    font-size: 10px;
+  }
+}
+.comments-area .thumb {
+  margin-right: 20px;
+}
+.comments-area .date {
+  font-size: 13px;
+  color: #cccccc;
+  margin-bottom: 13px;
+}
+.comments-area .comment {
+  color: #777777;
+  margin-bottom: 0px;
+}
+.comments-area .btn-reply {
+  background-color: #fff;
+  color: #222222;
+  border: 1px solid #eee;
+  padding: 2px 18px;
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.comments-area .btn-reply:hover {
+  background-color: #c5322d;
+  color: #fff;
+}
+
+/*============ End Blog Single Styles  =============*/
+/*============== contact_area css ================*/
+
+/* Contact Success and error Area css
+============================================================================================ */
+
+/* End Contact Success and error Area css
+============================================================================================ */
