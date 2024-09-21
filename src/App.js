@@ -3,6 +3,8 @@ import Layout from "./Components/Shared/Layout";
 import UserLayout from "./Components/Blog/UserLayout";
 import ProfileLayout from "./Components/Blog/ProfileLayout";
 
+import React from "react";
+
 
 import Dashboard from "./Pages/Admin/Dashboard";
 
@@ -32,53 +34,59 @@ import Home from "./Pages/User/Home";
 
 import Profile from "./Pages/User/Profile";
 
+export const AppContext = React.createContext();
+
 function App() {
+  const [data, setData] = React.useState({theme: 'light'})
+
   return (
-    <div>
-      <Router>
-        <Routes>
-          <Route path="/admin" element={<Layout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="profile" element={<AdminProfile />} />
+    <AppContext.Provider value={{data, setData}}>
+      <div>
+        <Router>
+          <Routes>
+            <Route path="/admin" element={<Layout />}>
+              <Route index element={<Dashboard />} />
+              <Route path="profile" element={<AdminProfile />} />
 
-            <Route path="users" element={<Users />} />
-            <Route path="users/create" element={<ManageUsers />} />
-            <Route path="users/edit" element={<ManageUsers />} />
+              <Route path="users" element={<Users />} />
+              <Route path="users/create" element={<ManageUsers />} />
+              <Route path="users/edit" element={<ManageUsers />} />
 
-            <Route path="posts" element={<Posts />} />
-            <Route path="posts/create" element={<ManagePosts />} />
-            <Route path="posts/edit" element={<ManagePosts />} />
+              <Route path="posts" element={<Posts />} />
+              <Route path="posts/create" element={<ManagePosts />} />
+              <Route path="posts/edit" element={<ManagePosts />} />
 
-            <Route path="roles" element={<Roles />} />
-            <Route path="roles/create" element={<ManageRoles />} />
-            <Route path="roles/edit" element={<ManageRoles />} />
+              <Route path="roles" element={<Roles />} />
+              <Route path="roles/create" element={<ManageRoles />} />
+              <Route path="roles/edit" element={<ManageRoles />} />
 
-            <Route path="comments" element={<Comments />} />
-            <Route path="comments/create" element={<ManageComments />} />
-            <Route path="comments/edit" element={<ManageComments />} />
+              <Route path="comments" element={<Comments />} />
+              <Route path="comments/create" element={<ManageComments />} />
+              <Route path="comments/edit" element={<ManageComments />} />
 
-            <Route path="likes" element={<Likes />} />
-            <Route path="manage-likes" element={<ManageLikes />} />
-          </Route>
+              <Route path="likes" element={<Likes />} />
+              <Route path="manage-likes" element={<ManageLikes />} />
+            </Route>
 
-          <Route path="/" element={<UserLayout />}>
-            <Route index element={<Home />} />
-            <Route path="signup" element={<Signup />} />
-            <Route path="change-password" element={<ChangePassword />} />
-            <Route path="recover-password" element={<RecoverPassword />} />
-            <Route path="login" element={<Login />} />
-          </Route>
+            <Route path="/" element={<UserLayout />}>
+              <Route index element={<Home />} />
+              <Route path="signup" element={<Signup />} />
+              <Route path="change-password" element={<ChangePassword />} />
+              <Route path="recover-password" element={<RecoverPassword />} />
+              <Route path="login" element={<Login />} />
+            </Route>
 
-          {/* Separate route for Profile with ProfileLayout */}
-          <Route path="profile" element={<ProfileLayout />}>
-            <Route index element={<Profile />} />
-          </Route>
+            {/* Separate route for Profile with ProfileLayout */}
+            <Route path="profile" element={<ProfileLayout />}>
+              <Route index element={<Profile />} />
+            </Route>
 
 
 
-        </Routes>
-      </Router>
-    </div>
+          </Routes>
+        </Router>
+      </div>
+    </AppContext.Provider>
   );
 }
 

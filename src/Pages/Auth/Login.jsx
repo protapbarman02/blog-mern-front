@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { AppContext } from '../../App';
 
 const Login = () => {
+    const appContext = React.useContext(AppContext);
+
+    React.useEffect(()=>{
+        appContext.setData({...appContext.data, isLogin: true })
+        console.log(appContext.data);
+    },[]);
+
     const goto = useNavigate();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
