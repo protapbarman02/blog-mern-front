@@ -1,15 +1,26 @@
 import React from 'react';
-import Card from "../../Components/Blog/Card";
-import Image from "../../Components/Blog/Image";
-import Paragraph from "../../Components/Blog/Paragraph";
+// import Card from "../../Components/Blog/Card";
+// import Image from "../../Components/Blog/Image";
+// import Paragraph from "../../Components/Blog/Paragraph";
+import Blog from "../../Components/Blog/Blog";
+import Sidebar from "../../Components/Blog/Sidebar";
+import Pagination from "../../Components/Blog/Pagination";
 
 const Home = () => {
   return (
-    <div className="home">
-      <Card>
-        <Image src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg" alt="Placeholder Image" />
-        <Paragraph text="This is a paragraph inside the card component." />
-      </Card>
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-2">
+          <Sidebar />
+        </div>
+        <div className="col-lg-8">
+          <Blog />
+        </div>
+        <div className="col-lg-2">
+          
+        </div>
+      </div>
+      <Pagination />
     </div>
   );
 };

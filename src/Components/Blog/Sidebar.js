@@ -40,3 +40,18 @@ export default function Sidebar() {
 
     )
 }
+
+// import React from 'react';
+// import SearchWidget from './SearchWidget';
+// import PopularPostsWidget from './PopularPostsWidget';
+
+// const Sidebar = () => {
+//   return (
+//     <div className="blog_right_sidebar">
+//       <SearchWidget />
+//       <PopularPostsWidget />
+//     </div>
+//   );
+// };
+
+// export default Sidebar;
